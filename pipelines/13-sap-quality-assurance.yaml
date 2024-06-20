@@ -47,7 +47,7 @@ parameters:
 
 #--------------------------------------+---------------------------------------8
 #                                                                              |
-# Calls 05-DB-and-SAP-installation.yaml from the code repository               |
+# Calls playbook_06_03_sap_functional_tests.yaml from the code repository               |
 # If an Agent pool is defined it will be used otherwise Microsoft hosted       |
 #                                                                              |
 #--------------------------------------+---------------------------------------8
@@ -60,7 +60,7 @@ extends:
   template:                            ./resources.yml
   parameters:
     stages:
-      - template:                      deploy\pipelines\05-DB-and-SAP-installation.yaml@sap-automation
+      - template:                      deploy\pipelines\playbook_06_03_sap_functional_tests@sap-automation
         parameters:
           sap_system_configuration_name:   ${{ parameters.sap_system_configuration_name }}
           environment:                     ${{ parameters.environment }}
