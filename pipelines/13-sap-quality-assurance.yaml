@@ -40,7 +40,6 @@ parameters:
     displayName:                       SAP Functional Tests Type
     type:                              string
     default:                           DatabaseHighAvailability
-    multiValue:                        true
     values:
       - DatabaseHighAvailability
       - CentralServerHighAvailability
