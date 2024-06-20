@@ -60,7 +60,7 @@ extends:
   template:                            ./resources.yml
   parameters:
     stages:
-      - template:                      deploy\pipelines\playbook_06_03_sap_functional_tests@sap-automation
+      - template:                      deploy\pipelines\13-sap-quality-assurance.yaml@sap-automation
         parameters:
           sap_system_configuration_name:   ${{ parameters.sap_system_configuration_name }}
           environment:                     ${{ parameters.environment }}
