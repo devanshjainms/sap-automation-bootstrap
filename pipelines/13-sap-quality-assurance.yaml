@@ -28,7 +28,7 @@ parameters:
   - name:                              sap_on_azure_quality_checks
     displayName:                       SAP on Azure Quality Checks
     type:                              boolean
-    default:                           false
+    default:                           true
 
 
   - name:                              sap_functional_tests
